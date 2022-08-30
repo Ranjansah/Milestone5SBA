@@ -34,6 +34,7 @@ public class ElectronicController {
 		Electronics ele=eleservice.getDevice(id);
 		
 		if(ele==null)
+			
 			throw new UserNotFoundException("Id is not present");
 		return ele;
 	}
